@@ -18,11 +18,17 @@ time, mark, audio, video {
     background:transparent;
     text-decoration: none;
 }
+.navbar {
+    background: #839788;
+    clear: both;
+}
 .nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-right: 5px;
     overflow: hidden;
+    float: left;
 }
 .nav-list li {
     float: left;
@@ -34,4 +40,11 @@ time, mark, audio, video {
     color: white;
     text-align: center;
     padding: 14px 16px;
+}
+#logo {
+    float: left;
+    overflow: auto;
+}
+.content {
+    background: #EEE0CB;
 }
