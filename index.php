@@ -16,6 +16,9 @@
     </head>
     <body>
         <?php include("shared/nav.php"); ?>
-        
+        <div class="container">
+
+        </div>
+        <?php include("shared/footer.php"); ?>
     </body>
 </html>

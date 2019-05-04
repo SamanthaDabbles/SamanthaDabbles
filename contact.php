@@ -11,16 +11,17 @@
     <?php include_once("shared/head.php"); ?>
 </head>
 <body>
-<?php include("shared/nav.php"); ?>
-<form id="contact" class="form">
-        <div class="container">
-            <div class="head">
-                <h1>Contact</h1>
+    <?php include("shared/nav.php"); ?>
+    <form id="contact" class="form">
+            <div class="container">
+                <div class="head">
+                    <h1>Contact</h1>
+                </div>
+                <input class="form-control" type="text" name="name" placeholder="Name" required /><br />
+                <input  class="form-control" type="email" name="email" placeholder="Email" required /><br />
+                <textarea class="form-control" type="text" name="message" placeholder="Message" required ></textarea><br />
+                <input class="btn btn-primary" type="submit" name="send" />
             </div>
-            <input class="form-control" type="text" name="name" placeholder="Name" required /><br />
-            <input  class="form-control" type="email" name="email" placeholder="Email" required /><br />
-            <textarea class="form-control" type="text" name="message" placeholder="Message" required ></textarea><br />
-            <input class="btn btn-primary" type="submit" name="send" />
-        </div>
-</form>
+    </form>
+    <?php include("shared/footer.php"); ?>
 </body>

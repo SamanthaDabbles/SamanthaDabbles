@@ -10,22 +10,27 @@
     
     <?php include_once("shared/head.php"); ?>
 </head>
-
-<?php include("shared/nav.php"); ?>
-<div class="">
-    <h2>Product Name</h2>
-    <p>
-        Type
-        <br/>
-        Size
-        <br/>
-        Measurement
-        <br/>
-        Price
-        <br/>
-        Art Description
-    </p>
-    <form action="">
-        <input class="btn" type="submit" name="" />
-    </form> 
-</div>
+<body>
+    <?php include("shared/nav.php"); ?>
+    <div class="container">
+        <div class="pull-left">
+            <img class="pull-left image" src="https://via.placeholder.com/150" alt="Display image">
+            <div class="pull-right">
+                <h2>Product Name</h2>
+                <p>
+                    Type
+                    <br/>
+                    Measurement
+                    <br/>
+                    Price
+                    <br/>
+                    Art Description
+                </p>
+                <form action="">
+                    <input class="btn" type="submit" name="" />
+                </form> 
+            </div>
+        </div>
+    </div>
+    <?php include("shared/footer.php"); ?>
+</body>

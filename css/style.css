@@ -39,7 +39,7 @@ p {
 }
 .nav li a {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.50em;
 }
 #login {
     display: inline;
@@ -49,4 +49,19 @@ p {
 }
 .content {
     background: #EEE0CB;
+}
+.image {
+    margin: 25px;
+}
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #839788;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+.footer b {
+    margin-top: 5px;
 }

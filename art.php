@@ -10,24 +10,24 @@
     
     <?php include_once("shared/head.php"); ?>
 </head>
-<?php include("shared/nav.php"); ?>
-<!--
-<form>
-    <input type="submit" />
-</form>
--->
-<div class="card pull-left">
-    <img class="pull-left" width="150" height="200" src="" alt="Display image">
-    <div class="pull-right">
-        <h2>Art Name</h2>
-        <p>
-            Creation Date
-            <br/>
-            Medium
-            <br/>
-            Art Description
-        </p>
-        <button class="btn">More</button>
-        <button class="btn">See Listings</button>
+<body>
+    <?php include("shared/nav.php"); ?>
+    <div class="container">
+        <div class="pull-left">
+            <img class="pull-left image" src="https://via.placeholder.com/150" alt="Display image">
+            <div class="pull-right">
+                <h2>Art Name</h2>
+                <p>
+                    Creation Date
+                    <br/>
+                    Medium
+                    <br/>
+                    Art Description
+                </p>
+                <button class="btn">More</button>
+                <button class="btn">See Listings</button>
+            </div>
+        </div>
     </div>
-</div>
+    <?php include("shared/footer.php"); ?>
+</body>

@@ -12,17 +12,14 @@
 </head>
 <body>
     <?php include("shared/nav.php"); ?>
-    <h1 class="hrow">About</h1>
-    <img src="assets/aboutpic.jpg" width="400px" alt="Photo of artist">
-    <h2>About Myself</h2>
-    <p> 
-        I'm a Web Programming student living in Minneapolis, Minnesota. I've created art as a hobby for most 
-        of my life, and transitioned to commission work durring highschool. I work comfortably in multiple
-        mediums such as: pencil, paint, and digital media. My design sensibilities are heavily inspired by 
-        the bright and exaggerated art found in animation. 
-    </p>
-    <h2>About Samantha Dabbles</h2>
-    <p>
-        This website represents the best of my art and allows me to showcase what I've accomplished so far.
-    </p>
+    <div class="container">
+        <h1 class="">About</h1>
+        <img src="https://via.placeholder.com/750x400" alt="">
+        <h2>About Samantha Dabbles</h2>
+        <p> 
+ 
+        </p>
+
+    </div>
+    <?php include("shared/footer.php"); ?>
 </body>
