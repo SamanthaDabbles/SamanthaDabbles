@@ -13,13 +13,11 @@
 <body>
     <?php include("shared/nav.php"); ?>
     <div class="container">
-        <h1 class="">About</h1>
-        <img src="https://via.placeholder.com/750x400" alt="">
-        <h2>About Samantha Dabbles</h2>
+        <h1 class="text-center">About Samantha Dabbles</h1>
+        <img width="100%" src="assets/dragon.png" alt="Shape of a dragon flying over mountains.">
         <p> 
  
         </p>
-
     </div>
     <?php include("shared/footer.php"); ?>
 </body>

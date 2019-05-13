@@ -17,7 +17,7 @@
     <body>
         <?php include("shared/nav.php"); ?>
         <div class="container">
-
+            <img id="main-img" width="100%" src="assets/space.jpg" />
         </div>
         <?php include("shared/footer.php"); ?>
     </body>

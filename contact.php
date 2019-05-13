@@ -12,16 +12,19 @@
 </head>
 <body>
     <?php include("shared/nav.php"); ?>
+    <div class="container">
+        <div class="head">
+            <h1>Contact</h1>
+            <p class="info">Please send questions to samanthadabbles@gmail.com</p>
+        </div>
+    </div>
+<!--
     <form id="contact" class="form">
-            <div class="container">
-                <div class="head">
-                    <h1>Contact</h1>
-                </div>
-                <input class="form-control" type="text" name="name" placeholder="Name" required /><br />
-                <input  class="form-control" type="email" name="email" placeholder="Email" required /><br />
-                <textarea class="form-control" type="text" name="message" placeholder="Message" required ></textarea><br />
-                <input class="btn btn-primary" type="submit" name="send" />
-            </div>
+        <input class="form-control" type="text" name="name" placeholder="Name" required /><br />
+        <input  class="form-control" type="email" name="email" placeholder="Email" required /><br />
+        <textarea class="form-control" type="text" name="message" placeholder="Message" required ></textarea><br />
+        <input class="btn btn-primary" type="submit" name="send" />
     </form>
+-->
     <?php include("shared/footer.php"); ?>
 </body>
