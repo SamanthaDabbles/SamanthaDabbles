@@ -73,7 +73,6 @@ if(isset($_POST['update_art'])){
     if(!empty($_FILES['art_image']['name'])) {
         $art_image = $_FILES['art_image'];
         if (is_uploaded_file($_FILES['art_image']['tmp_name'])) {
-            echo "It is a hit.";
             $imgData = addslashes(file_get_contents($_FILES['art_image']['tmp_name']));
             $imageProperties = getimageSize($_FILES['art_image']['tmp_name']);
             $q = "UPDATE Art SET 
@@ -97,6 +96,12 @@ if(isset($_POST['update_art'])){
         WHERE `Art`.`ArtID` = '$art_id'";
     }
     mysqli_query($con, $q);
+    if(mysqli_query($con, $q)){
+        echo '<p style=text-align:center;color:green;"><b>Record edited successfully.</b></p>';
+    }
+    else {
+        echo '<p style="text-align:center;color:red;"><b>Record edit unsuccessful:' . mysqli_error($con) . '</b></p>';
+    }
 }
 mysqli_close($con);
 }

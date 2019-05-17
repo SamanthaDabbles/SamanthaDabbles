@@ -53,22 +53,23 @@ if(isset($_POST['insert_art'])){
     $art_desc = mysqli_real_escape_string($con,$_POST['art_desc']);
     $art_medium = mysqli_real_escape_string($con,$_POST['art_medium']);
     $art_creation_date = mysqli_real_escape_string($con,$_POST['art_creation_date']);
+    $modified_date = mysqli_real_escape_string($con,date("Y-m-d H:i:s"));
+    $creation_date = mysqli_real_escape_string($con,date("Y-m-d H:i:s"));
 
-    //$art_image = mysqli_real_escape_string($con,addslashes(file_get_contents($_FILES['art_image']['tmp_name'])));
     if (is_uploaded_file($_FILES['art_image']['tmp_name'])) {
         $imgData = addslashes(file_get_contents($_FILES['art_image']['tmp_name']));
         $imageProperties = getimageSize($_FILES['art_image']['tmp_name']);
     }
     $q = "INSERT INTO Art(`Name`,`Description`,`Medium`,`ArtCreationDate`,`CreationDate`,`ModifiedDate`,`Type`, `Image`)
-    VALUES('$art_name', '$art_desc', '$art_medium', '$art_creation_date', '{$imageProperties['mime']}', '{$imgData}')";
+    VALUES('$art_name', '$art_desc', '$art_medium', '$art_creation_date','$creation_date', '$modified_date', '{$imageProperties['mime']}', '{$imgData}')";
     if(mysqli_query($con, $q)){
         header("Location: view_art.php");
-        echo "Record added successfully.";
+        echo '<p style=text-align:center;color:green;"><b>Record added successfully.</b></p>';
     }
     else {
-        echo "Record unsuccessful." . mysqli_error($con);
+        echo '<p style="text-align:center;color:red;"><b>Record insert unsuccessful:' . mysqli_error($con) . '</b></p>';
     }
     
 }
 mysqli_close($con);
-?>
+} ?>
