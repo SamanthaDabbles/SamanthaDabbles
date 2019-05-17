@@ -5,7 +5,7 @@ include('../db.php');
 <html>
     <head>
         <title>Admin Login</title>
-        <?php include("../shared/head.php") ?>
+        <?php include("../shared/head.php"); ?>
     </head>
     <body>
         <div class="container">
@@ -34,9 +34,10 @@ if(isset($_POST['login']))
     $q = "SELECT * FROM `admin` WHERE Username='$username'";
     $query = mysqli_query($con, $q);
     $check = mysqli_num_rows($query);
+    $incorrect = '<p class="incorrect" style="text-align:center;color:red;"><b>Error: Login details incorrect<b></p>';
     if($check == 0)
     {
-        echo "Login details incorrect!";
+        echo $incorrect;
     }
     else
     {
@@ -51,7 +52,7 @@ if(isset($_POST['login']))
         }
         else 
         {
-            echo "Login details incorrect!";
+            echo $incorrect;
         }
     }
 }
