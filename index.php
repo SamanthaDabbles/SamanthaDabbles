@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<?php 
-?>
+
 <html>
     <head>
         <title>Samantha Dabbles</title>

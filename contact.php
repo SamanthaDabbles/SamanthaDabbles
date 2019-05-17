@@ -13,7 +13,7 @@
 <body>
     <?php include("shared/nav.php"); ?>
     <div class="container">
-        <div class="head">
+        <div class="head" style="text-align:center;">
             <h1>Contact</h1>
             <p class="info">Please send questions to samanthadabbles@gmail.com</p>
         </div>
